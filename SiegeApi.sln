@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiegeApi", "SiegeApi\SiegeApi.csproj", "{581112B1-30E7-4F5E-BE22-1A02D68DC161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiegeApi.Tests", "SiegeApi.Tests\SiegeApi.Tests.csproj", "{D271D87F-3251-4075-84A5-0F42678919EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{581112B1-30E7-4F5E-BE22-1A02D68DC161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581112B1-30E7-4F5E-BE22-1A02D68DC161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581112B1-30E7-4F5E-BE22-1A02D68DC161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581112B1-30E7-4F5E-BE22-1A02D68DC161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D271D87F-3251-4075-84A5-0F42678919EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D271D87F-3251-4075-84A5-0F42678919EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D271D87F-3251-4075-84A5-0F42678919EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D271D87F-3251-4075-84A5-0F42678919EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
