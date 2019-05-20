@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace SiegeApi.Models
 {
     public class QueueStats
@@ -8,6 +10,7 @@ namespace SiegeApi.Models
         public int MatchesLost { get; set; }
         public int TimePlayed { get; set; }
 
+        [JsonIgnore]
         public int MatchesPlayed => MatchesLost + MatchesWon;
     }
 }

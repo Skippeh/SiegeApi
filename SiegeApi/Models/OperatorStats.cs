@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace SiegeApi.Models
 {
@@ -12,6 +13,7 @@ namespace SiegeApi.Models
         public int RoundsLost { get; set; }
         public Dictionary<string, int> GadgetStats { get; set; }
 
+        [JsonIgnore]
         public int RoundsPlayed => RoundsWon + RoundsLost;
     }
 }
