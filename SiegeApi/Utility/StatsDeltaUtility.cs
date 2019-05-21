@@ -41,7 +41,7 @@ namespace SiegeApi.Utility
                 {
                     Operator = bOp.Operator,
                     Deaths = bOp.Deaths - aOp.Deaths,
-                    Kills = bOp.Deaths - aOp.Deaths,
+                    Kills = bOp.Kills - aOp.Kills,
                     RoundsLost = bOp.RoundsLost - aOp.RoundsLost,
                     RoundsWon = bOp.RoundsWon - aOp.RoundsWon,
                     TimePlayed = bOp.TimePlayed - aOp.TimePlayed,
