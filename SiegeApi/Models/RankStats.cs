@@ -9,9 +9,16 @@ namespace SiegeApi.Models
     {
         public int Abandons { get; set; }
         public int Losses { get; set; }
-        [JsonProperty("max_mmr")] public float MaxMmr { get; set; }
-        [JsonProperty("max_rank")] public int MaxRank { get; set; }
+
+        [JsonProperty("max_mmr")]
+        public float MaxMmr { get; set; }
+
+        [JsonProperty("max_rank")]
+        public int MaxRank { get; set; }
+
         public float Mmr { get; set; }
+
+        [JsonIgnore]
         public Rank Rank
         {
             get => Ranks.Data[rank];
@@ -33,10 +40,10 @@ namespace SiegeApi.Models
 
         [JsonProperty]
         private int season { get; set; }
-        
+
         [JsonProperty]
         private string region { get; set; }
-        
+
         [JsonProperty]
         private int rank { get; set; }
     }
