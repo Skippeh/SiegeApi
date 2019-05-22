@@ -55,7 +55,7 @@ namespace SiegeApi
 
                 if (renewDelay > TimeSpan.Zero)
                 {
-                    Console.WriteLine($"Renewing token at {renewTime}");
+                    Console.WriteLine($"Renewing token at {renewTime.ToLocalTime()}");
 
                     renewCancellation = new CancellationTokenSource();
                     renewTask = RenewLoginAsync(renewDelay, email, password, renewCancellation.Token);
