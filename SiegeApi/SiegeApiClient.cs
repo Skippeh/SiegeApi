@@ -11,6 +11,7 @@ using SiegeApi.Exceptions;
 using SiegeApi.Models;
 using SiegeApi.Requests;
 using SiegeApi.Requests.ResponseModels;
+using SiegeApi.Utility;
 
 namespace SiegeApi
 {
@@ -234,7 +235,18 @@ namespace SiegeApi
         public async Task<Dictionary<Guid, RankStats>> GetRanksAsync(Platform platform, Region region, Season season, params Guid[] userIds)
         {
             RankResponse response = await RankRequests.GetRank(this, platform, region, season, userIds);
-            return response.Players.ToDictionary(kv => Guid.Parse(kv.Key), kv => kv.Value);
+            return response.Players.ToDictionary(kv => Guid.Parse(kv.Key), kv => new RankStats
+            {
+                Abandons = kv.Value.Abandons,
+                Losses = kv.Value.Losses,
+                Mmr = kv.Value.Mmr,
+                Rank = Ranks.Data[kv.Value.Rank],
+                Season = Seasons.Data[kv.Value.Season - 1],
+                Wins = kv.Value.Wins,
+                MaxMmr = kv.Value.MaxMmr,
+                MaxRank = kv.Value.MaxRank,
+                Region = FormatUtility.RegionFromString(kv.Value.Region) ?? throw new FormatException("Unknown region format")
+            });
         }
 
         public async Task<Dictionary<Guid, Dictionary<Season, RankStats>>> GetRanksAsync(Platform platform, Region region, params Guid[] userIds)
