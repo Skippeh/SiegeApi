@@ -428,7 +428,7 @@ namespace SiegeApi.Data
                 Id = "Clash-gsutr",
                 Name = "clash",
                 ReadableName = "Clash",
-                FullIndex = "2:10",
+                FullIndex = "3:10",
                 Gadgets = new[] {"operatorpvp_clash_sloweddown"},
                 Team = TeamType.Defender
             },
@@ -437,7 +437,7 @@ namespace SiegeApi.Data
                 Id = "Maverick-gsutr",
                 Name = "maverick",
                 ReadableName = "Maverick",
-                FullIndex = "3:10",
+                FullIndex = "2:10",
                 Gadgets = new[] {"operatorpvp_maverick_wallbreached"},
                 Team = TeamType.Attacker
             },
