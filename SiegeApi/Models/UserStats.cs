@@ -10,5 +10,6 @@ namespace SiegeApi.Models
         public PvpStats PvpStats { get; set; }
         public GameModesStats GameModes { get; set; }
         public Dictionary<WeaponType, WeaponStats> WeaponStats { get; set; }
+        public ProfileProgression Progression { get; set; }
     }
 }

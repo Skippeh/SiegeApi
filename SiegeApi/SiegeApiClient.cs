@@ -324,6 +324,8 @@ namespace SiegeApi
             return result;
         }
 
+        #endregion
+
         private TValue GetValueOrDefault<TKey, TValue>(Dictionary<TKey, TValue> source, TKey key, Func<TValue> defaultValueInstantiator)
         {
             if (source.TryGetValue(key, out var result))
@@ -334,7 +336,16 @@ namespace SiegeApi
             return value;
         }
 
-        #endregion
+        public async Task<Dictionary<Guid, ProfileProgression>> GetProgression(Platform platform, params Guid[] profileIds)
+        {
+            var response = await ProgressionRequests.GetProgression(this, platform, profileIds);
+            return response.UserProfiles.ToDictionary(x => x.ProfileId, x => new ProfileProgression
+            {
+                Level = x.Level,
+                Xp = x.Xp,
+                LootboxProbability = x.LootboxProbability
+            });
+        }
         
         private string GetAuthorizationToken()
         {
