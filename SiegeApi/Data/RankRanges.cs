@@ -8,8 +8,8 @@ namespace SiegeApi.Data
     {
         private class Range
         {
-            public float MinMmr;
-            public float MaxMmr;
+            public readonly float MinMmr;
+            public readonly float MaxMmr;
 
             public Range(float minMmr, float maxMmr)
             {
@@ -18,7 +18,7 @@ namespace SiegeApi.Data
             }
         }
 
-        private List<(Range, int)> ranges = new List<(Range, int)>
+        private readonly List<(Range, int)> ranges = new List<(Range, int)>
         {
             (new Range(int.MinValue, 1399), 1), // Copper 4
             (new Range(1400, 1499), 2), // Copper 3
