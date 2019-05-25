@@ -34,5 +34,7 @@ namespace SiegeApi.Data
             Id = index,
             Name = name
         }).ToArray();
+
+        public static readonly RankRanges Ranges = new RankRanges();
     }
 }

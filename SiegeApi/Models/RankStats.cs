@@ -1,3 +1,6 @@
+using SiegeApi.Data;
+using SiegeApi.Utility;
+
 namespace SiegeApi.Models
 {
     public class RankStats
@@ -11,5 +14,16 @@ namespace SiegeApi.Models
         public Region Region { get; set; }
         public Season Season { get; set; }
         public int Wins { get; set; }
+        public int GamesPlayed => Wins + Losses;
+
+        public Rank GetRankFromMmr()
+        {
+            return Ranks.Ranges.GetRank(Mmr);
+        }
+
+        public Rank GetRankFromMaxMmr()
+        {
+            return Ranks.Ranges.GetRank(MaxMmr);
+        }
     }
 }
