@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiegeApi", "SiegeApi\SiegeA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiegeApi.Tests", "SiegeApi.Tests\SiegeApi.Tests.csproj", "{D271D87F-3251-4075-84A5-0F42678919EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiegeApi.Texts", "SiegeApi.Texts\SiegeApi.Texts.csproj", "{0D28E8B2-347A-4A16-8E7B-B36D8C201B56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{D271D87F-3251-4075-84A5-0F42678919EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D271D87F-3251-4075-84A5-0F42678919EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D271D87F-3251-4075-84A5-0F42678919EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D28E8B2-347A-4A16-8E7B-B36D8C201B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D28E8B2-347A-4A16-8E7B-B36D8C201B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D28E8B2-347A-4A16-8E7B-B36D8C201B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D28E8B2-347A-4A16-8E7B-B36D8C201B56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
