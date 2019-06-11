@@ -56,7 +56,9 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_maverick_wallbreached", "Torch Breaches"},
                     {"operatorpvp_clash_sloweddown", "Enemies Killed while Slowed Down"},
                     {"operatorpvp_mozzie_droneshacked", "Drones Hacked"},
-                    {"operatorpvp_gridlock_traxdeployed", "Trax Deployed"}
+                    {"operatorpvp_gridlock_traxdeployed", "Trax Deployed"},
+                    {"operatorpvp_Warden_Kills_During_Ability", "Kills While Using Glance"},
+                    {"operatorpvp_Nokk_Cameras_Deceived", "Observation Tools Deceived"}
                 }
             }
         };
