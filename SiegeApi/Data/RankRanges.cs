@@ -48,6 +48,8 @@ namespace SiegeApi.Data
 
         public Rank GetRank(float mmr)
         {
+            mmr = (float) Math.Floor(mmr);
+            
             for (int i = 0; i < ranges.Count; ++i)
             {
                 Range range = ranges[i].Item1;
