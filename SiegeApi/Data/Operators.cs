@@ -458,6 +458,24 @@ namespace SiegeApi.Data
                 FullIndex = "2:12",
                 Gadgets = new[] {"operatorpvp_mozzie_droneshacked"},
                 Team = TeamType.Defender
+            },
+            new Operator
+            {
+                Id = "nakk",
+                Name = "nokk",
+                ReadableName = "Nøkk",
+                FullIndex = "2:13",
+                Gadgets = new[] {"operatorpvp_Nokk_Cameras_Deceived"},
+                Team = TeamType.Attacker
+            },
+            new Operator
+            {
+                Id = "warden",
+                Name = "warden",
+                ReadableName = "Warden",
+                FullIndex = "2:14",
+                Gadgets = new[] {"operatorpvp_Warden_Kills_During_Ability"},
+                Team = TeamType.Defender
             }
         };
     }
