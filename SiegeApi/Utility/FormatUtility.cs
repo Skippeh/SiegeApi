@@ -15,6 +15,7 @@ namespace SiegeApi.Utility
                 case "psn": return Platform.PS4;
                 case "xbl": return Platform.XboxOne;
                 case "epic": return Platform.EpicGames;
+                case "ubimobile": return Platform.UbiMobile;
             }
 
             return null;
@@ -29,6 +30,7 @@ namespace SiegeApi.Utility
                 case Platform.PS4: return "psn";
                 case Platform.XboxOne: return "xbl";
                 case Platform.EpicGames: return "epic";
+                case Platform.UbiMobile: return "ubimobile";
             }
 
             return platform.ToString();

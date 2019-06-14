@@ -6,6 +6,7 @@ namespace SiegeApi.Data
         Steam,
         PS4,
         XboxOne,
-        EpicGames
+        EpicGames,
+        UbiMobile
     }
 }
