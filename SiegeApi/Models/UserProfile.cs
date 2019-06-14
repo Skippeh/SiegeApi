@@ -11,7 +11,7 @@ namespace SiegeApi.Models
 
         public Platform Platform
         {
-            get => FormatUtility.PlatformFromString(platform) ?? throw new NotImplementedException();
+            get => FormatUtility.PlatformFromString(platform) ?? throw new NotImplementedException($"Unknown platform format: {platform}");
             set => platform = FormatUtility.PlatformToString(value);
         }
 
