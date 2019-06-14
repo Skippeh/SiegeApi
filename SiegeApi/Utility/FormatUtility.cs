@@ -14,6 +14,7 @@ namespace SiegeApi.Utility
                 case "steam": return Platform.Steam;
                 case "psn": return Platform.PS4;
                 case "xbl": return Platform.XboxOne;
+                case "epic": return Platform.EpicGames;
             }
 
             return null;
@@ -27,6 +28,7 @@ namespace SiegeApi.Utility
                 case Platform.Steam: return "steam";
                 case Platform.PS4: return "psn";
                 case Platform.XboxOne: return "xbl";
+                case Platform.EpicGames: return "epic";
             }
 
             return platform.ToString();

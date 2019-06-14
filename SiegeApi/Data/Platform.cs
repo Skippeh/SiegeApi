@@ -5,6 +5,7 @@ namespace SiegeApi.Data
         Uplay,
         Steam,
         PS4,
-        XboxOne
+        XboxOne,
+        EpicGames
     }
 }
