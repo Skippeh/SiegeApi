@@ -7,6 +7,7 @@ namespace SiegeApi.Data
         PS4,
         XboxOne,
         EpicGames,
-        UbiMobile
+        UbiMobile,
+        Switch
     }
 }
