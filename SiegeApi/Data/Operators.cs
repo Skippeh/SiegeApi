@@ -476,6 +476,24 @@ namespace SiegeApi.Data
                 FullIndex = "2:14",
                 Gadgets = new[] {"operatorpvp_Warden_Kills_During_Ability"},
                 Team = TeamType.Defender
+            },
+            new Operator
+            {
+                Id = "goyo",
+                Name = "goyo",
+                ReadableName = "Goyo",
+                FullIndex = "2:15",
+                Gadgets = new[] {"operatorpvp_goyo_volcandetonate"},
+                Team = TeamType.Defender
+            },
+            new Operator
+            {
+                Id = "amaru",
+                Name = "amaru",
+                ReadableName = "Amaru",
+                FullIndex = "2:17",
+                Gadgets = new[] {"operatorpvp_amaru_distancereeled"},
+                Team = TeamType.Attacker
             }
         };
     }

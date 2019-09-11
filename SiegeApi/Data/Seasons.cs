@@ -20,7 +20,8 @@ namespace SiegeApi.Data
             "Grim Sky",
             "Wind Bastion",
             "Burnt Horizon",
-            "Phantom Sight"
+            "Phantom Sight",
+            "Ember Rise"
         }.Select((name, index) => new Season
         {
             Id = index + 1,

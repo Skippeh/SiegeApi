@@ -58,7 +58,9 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_mozzie_droneshacked", "Drones Hacked"},
                     {"operatorpvp_gridlock_traxdeployed", "Trax Deployed"},
                     {"operatorpvp_Warden_Kills_During_Ability", "Kills While Using Glance"},
-                    {"operatorpvp_Nokk_Cameras_Deceived", "Observation Tools Deceived"}
+                    {"operatorpvp_Nokk_Cameras_Deceived", "Observation Tools Deceived"},
+                    {"operatorpvp_goyo_volcandetonate", "Volcán Detonated by Your Team"},
+                    {"operatorpvp_amaru_distancereeled", "Total Distance Reeled"}
                 }
             }
         };
