@@ -60,7 +60,9 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_Warden_Kills_During_Ability", "Kills While Using Glance"},
                     {"operatorpvp_Nokk_Cameras_Deceived", "Observation Tools Deceived"},
                     {"operatorpvp_goyo_volcandetonate", "Volcán Detonated by Your Team"},
-                    {"operatorpvp_amaru_distancereeled", "Total Distance Reeled"}
+                    {"operatorpvp_amaru_distancereeled", "Total Distance Reeled"},
+                    {"operatorpvp_kali_gadgetdestroywithexplosivelance", "Gadgets Destroyed with the LV"},
+                    {"operatorpve_wamai_gadgetdestroybymagnet", "Projectiles Captured"}
                 }
             }
         };
