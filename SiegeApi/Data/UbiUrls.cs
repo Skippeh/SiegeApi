@@ -35,16 +35,6 @@ namespace SiegeApi.Data
                 }
             },
             {
-                Platform.EpicGames,
-                new PlatformUrls
-                {
-                    ProfileUrl = "https://public-ubiservices.ubi.com/v2/profiles?platformType=uplay&nameOnPlatform=",
-                    StatsUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/playerstats2/statistics?",
-                    LevelUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
-                    RankUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6karma/players?board_id=pvp_ranked&"
-                }
-            },
-            {
                 Platform.PS4,
                 new PlatformUrls
                 {
