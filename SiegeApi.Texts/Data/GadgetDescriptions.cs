@@ -62,7 +62,7 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_goyo_volcandetonate", "Volcán Detonated by Your Team"},
                     {"operatorpvp_amaru_distancereeled", "Total Distance Reeled"},
                     {"operatorpvp_kali_gadgetdestroywithexplosivelance", "Gadgets Destroyed with the LV"},
-                    {"operatorpve_wamai_gadgetdestroybymagnet", "Projectiles Captured"}
+                    {"operatorpvp_wamai_gadgetdestroybymagnet", "Projectiles Captured"}
                 }
             }
         };
