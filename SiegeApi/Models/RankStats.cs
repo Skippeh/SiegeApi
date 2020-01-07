@@ -18,12 +18,12 @@ namespace SiegeApi.Models
 
         public Rank GetRankFromMmr()
         {
-            return Ranks.Ranges.GetRank(Mmr);
+            return Season.RankRanges.GetRank(Mmr);
         }
 
         public Rank GetRankFromMaxMmr()
         {
-            return Ranks.Ranges.GetRank(MaxMmr);
+            return Season.RankRanges.GetRank(MaxMmr);
         }
     }
 }
