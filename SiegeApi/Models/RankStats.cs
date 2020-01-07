@@ -8,7 +8,7 @@ namespace SiegeApi.Models
         public int Abandons { get; set; }
         public int Losses { get; set; }
         public float MaxMmr { get; set; }
-        public int MaxRank { get; set; }
+        public Rank MaxRank { get; set; }
         public float Mmr { get; set; }
         public Rank Rank { get; set; }
         public Region Region { get; set; }

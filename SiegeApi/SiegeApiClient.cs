@@ -247,7 +247,7 @@ namespace SiegeApi
                     Season = resultSeason,
                     Wins = kv.Value.Wins,
                     MaxMmr = kv.Value.MaxMmr,
-                    MaxRank = kv.Value.MaxRank,
+                    MaxRank = resultSeason.Ranks[kv.Value.MaxRank],
                     Region = FormatUtility.RegionFromString(kv.Value.Region) ?? throw new FormatException("Unknown region format")
                 };
             });

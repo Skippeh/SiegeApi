@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using SiegeApi.Models;
 
 namespace SiegeApi.Utility
@@ -12,10 +14,10 @@ namespace SiegeApi.Utility
                 Rank = b.Rank,
                 Abandons = b.Abandons - a.Abandons,
                 Losses = b.Losses - a.Losses,
-                Mmr = b.Mmr - a.Mmr,
+                Mmr = Math.Max(b.Mmr, a.Mmr),
                 Wins = b.Wins - a.Wins,
-                MaxMmr = b.MaxMmr - a.MaxMmr,
-                MaxRank = b.MaxRank - a.MaxRank
+                MaxMmr = Math.Max(b.MaxMmr, a.MaxMmr),
+                MaxRank = new[] {a.MaxRank, b.MaxRank}.OrderByDescending(rank => rank.Id).First()
             };
         }
     }
