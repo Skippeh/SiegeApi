@@ -491,7 +491,7 @@ namespace SiegeApi.Data
                 Id = "amaru",
                 Name = "amaru",
                 ReadableName = "Amaru",
-                FullIndex = "2:17",
+                FullIndex = "2:16",
                 Gadgets = new[] {"operatorpvp_amaru_distancereeled"},
                 Team = TeamType.Attacker
             },
@@ -502,7 +502,7 @@ namespace SiegeApi.Data
                 ReadableName = "Kali",
                 FullIndex = "2:17",
                 Team = TeamType.Attacker,
-                Gadgets = new[] {"operatorpvp_kali_gadgetdestroywithexplosivelance "}
+                Gadgets = new[] {"operatorpvp_kali_gadgetdestroywithexplosivelance"}
             },
             new Operator
             {
