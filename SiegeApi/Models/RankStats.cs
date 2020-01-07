@@ -10,13 +10,11 @@ namespace SiegeApi.Models
         public int Losses { get; set; }
         public float MaxMmr { get; set; }
 
-        [JsonIgnore]
-        public Rank MaxRank { get; set; }
+        public int MaxRank { get; set; }
 
         public float Mmr { get; set; }
 
-        [JsonIgnore]
-        public Rank Rank { get; set; }
+        public int Rank { get; set; }
 
         public Region Region { get; set; }
 

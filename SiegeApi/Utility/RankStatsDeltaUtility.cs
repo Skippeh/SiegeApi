@@ -17,7 +17,7 @@ namespace SiegeApi.Utility
                 Mmr = Math.Max(b.Mmr, a.Mmr),
                 Wins = b.Wins - a.Wins,
                 MaxMmr = Math.Max(b.MaxMmr, a.MaxMmr),
-                MaxRank = new[] {a.MaxRank, b.MaxRank}.OrderByDescending(rank => rank.Id).First()
+                MaxRank = Math.Max(a.MaxRank, b.MaxRank)
             };
         }
     }
