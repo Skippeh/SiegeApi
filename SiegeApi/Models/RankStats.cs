@@ -17,21 +17,24 @@ namespace SiegeApi.Models
         public int Rank { get; set; }
 
         public Region Region { get; set; }
-
-        [JsonIgnore]
-        public Season Season { get; set; }
+        public int SeasonId { get; set; }
 
         public int Wins { get; set; }
         public int GamesPlayed => Wins + Losses;
 
         public Rank GetRankFromMmr()
         {
-            return Season.RankRanges.GetRank(Mmr);
+            return GetSeason().RankRanges.GetRank(Mmr);
         }
 
         public Rank GetRankFromMaxMmr()
         {
-            return Season.RankRanges.GetRank(MaxMmr);
+            return GetSeason().RankRanges.GetRank(MaxMmr);
+        }
+
+        public Season GetSeason()
+        {
+            return Seasons.Data[SeasonId - 1];
         }
     }
 }

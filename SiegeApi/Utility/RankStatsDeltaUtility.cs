@@ -10,7 +10,7 @@ namespace SiegeApi.Utility
         {
             return new RankStats
             {
-                Season = b.Season,
+                SeasonId = b.SeasonId,
                 Rank = b.Rank,
                 Abandons = b.Abandons - a.Abandons,
                 Losses = b.Losses - a.Losses,

@@ -241,7 +241,7 @@ namespace SiegeApi
                 Losses = kv.Value.Losses,
                 Mmr = kv.Value.Mmr,
                 Rank = kv.Value.Rank,
-                Season = Seasons.Data[kv.Value.Season - 1],
+                SeasonId = kv.Value.Season,
                 Wins = kv.Value.Wins,
                 MaxMmr = kv.Value.MaxMmr,
                 MaxRank = kv.Value.MaxRank,
@@ -266,7 +266,7 @@ namespace SiegeApi
 
                 foreach (RankStats rankStats in flattenedStats.Where(kv2 => userId == kv2.Key).Select(kv2 => kv2.Value))
                 {
-                    playerDict.Add(rankStats.Season, rankStats);
+                    playerDict.Add(rankStats.GetSeason(), rankStats);
                 }
             }
             
@@ -316,7 +316,7 @@ namespace SiegeApi
 
                 foreach (RankStats rankStats in flattenedStats.Where(kv2 => userId == kv2.Key).Select(kv2 => kv2.Value))
                 {
-                    var seasonStats = GetValueOrDefault(playerDict, rankStats.Season, () => new Dictionary<Region, RankStats>());
+                    var seasonStats = GetValueOrDefault(playerDict, rankStats.GetSeason(), () => new Dictionary<Region, RankStats>());
                     seasonStats.Add(rankStats.Region, rankStats);
                 }
             }
