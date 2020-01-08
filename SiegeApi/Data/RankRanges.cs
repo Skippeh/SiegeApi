@@ -17,6 +17,11 @@ namespace SiegeApi.Data
                 MinMmr = minMmr;
                 MaxMmr = maxMmr;
             }
+
+            public override string ToString()
+            {
+                return $"[Range: {MinMmr} - {MaxMmr}]";
+            }
         }
 
         private readonly List<(Range, int)> ranges;
@@ -28,12 +33,15 @@ namespace SiegeApi.Data
             this.season = season ?? throw new ArgumentNullException(nameof(season));
             ranges = new List<(Range, int)>();
 
-            for (int i = 0; i < mmrValues.Length; ++i)
+            for (int i = 0; i < mmrValues.Length - 1; ++i)
             {
-                float currentMmr = i == 0 ? int.MinValue : mmrValues[i];
-                float nextMmr = i == 0 ? mmrValues[0] : i >= mmrValues.Length - 1 ? int.MaxValue : mmrValues[i + 1];
+                float currentMmr = mmrValues[i];
+                float nextMmr = mmrValues[i + 1];
+                
                 ranges.Add((new Range(currentMmr, nextMmr), i + 1));
             }
+
+            ranges.Insert(ranges.Count, (new Range(mmrValues[mmrValues.Length - 1], int.MaxValue), mmrValues.Length));
         }
 
         public Rank GetRank(float mmr)
@@ -47,6 +55,9 @@ namespace SiegeApi.Data
                 if (range.MinMmr <= mmr && range.MaxMmr >= mmr)
                     return season.Ranks[ranges[i].Item2];
             }
+
+            if (mmr < ranges[0].Item1.MinMmr)
+                return season.Ranks[ranges[0].Item2];
 
             throw new ArgumentOutOfRangeException(nameof(mmr));
         }
