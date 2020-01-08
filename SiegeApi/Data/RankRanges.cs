@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using SiegeApi.Models;
 
@@ -24,6 +25,7 @@ namespace SiegeApi.Data
             }
         }
 
+        public readonly ReadOnlyCollection<(Range, int)> Ranges;
         private readonly List<(Range, int)> ranges;
 
         private Season season;
@@ -32,6 +34,7 @@ namespace SiegeApi.Data
         {
             this.season = season ?? throw new ArgumentNullException(nameof(season));
             ranges = new List<(Range, int)>();
+            Ranges = new ReadOnlyCollection<(Range, int)>(ranges);
 
             for (int i = 0; i < mmrValues.Length - 1; ++i)
             {
