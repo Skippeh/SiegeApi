@@ -130,7 +130,7 @@ namespace SiegeApi.Data
         {
             switch (season.Id)
             {
-                case int _ when (season.Id >= 1 && season.Id <= 2): // Season 1 and 2
+                case int _ when (season.Id >= 1 && season.Id <= 3): // Season 1 to 3
                     return new RankRanges(season, new []
                     {
                         2100, // Copper 1
