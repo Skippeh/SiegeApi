@@ -9,7 +9,7 @@ namespace SiegeApi.Data
 {
     internal class UbiUrls
     {
-        public const string LoginUrl = "https://uplayconnect.ubi.com/ubiservices/v2/profiles/sessions?";
+        public const string LoginUrl = "https://public-ubiservices.ubi.com/v3/profiles/sessions?";
         public const string ReverseUrl = "https://public-ubiservices.ubi.com/v2/profiles?userId=";
 
         public static readonly ReadOnlyDictionary<Platform, PlatformUrls> Urls = new ReadOnlyDictionary<Platform, PlatformUrls>(new Dictionary<Platform, PlatformUrls>
