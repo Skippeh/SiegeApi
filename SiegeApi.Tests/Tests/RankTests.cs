@@ -35,7 +35,7 @@ namespace SiegeApi.Tests.Tests
                 Dictionary<Guid, RankStats> rankStats = await Singletons.ApiClient.GetRanksAsync(profile.Platform, Region.Europe, Seasons.CurrentSeason, profile.UserId);
                 Assert.IsTrue(rankStats.ContainsKey(profile.UserId), "Returned rank stats does not have stats for the specified user id.");
 
-                Assert.AreEqual(rankStats[profile.UserId].Season, Seasons.CurrentSeason, "Returned season does not match the requested season.");
+                Assert.AreEqual(rankStats[profile.UserId].SeasonId, Seasons.CurrentSeason.Id, "Returned season does not match the requested season.");
                 Assert.AreEqual(rankStats[profile.UserId].Region, Region.Europe, "Returned region does not match the requested region.");
             }
             catch (NotLoggedInException ex)
@@ -56,7 +56,7 @@ namespace SiegeApi.Tests.Tests
 
                 foreach (RankStats rankStats in allRankStats[profile.UserId].Values)
                 {
-                    Assert.IsTrue(rankStats.Season == Seasons.CurrentSeason, "Returned season does not match the requested season.");
+                    Assert.IsTrue(rankStats.SeasonId == Seasons.CurrentSeason.Id, "Returned season does not match the requested season.");
                 }
             }
             catch (NotLoggedInException ex)
