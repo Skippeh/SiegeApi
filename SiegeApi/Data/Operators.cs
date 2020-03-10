@@ -512,6 +512,24 @@ namespace SiegeApi.Data
                 FullIndex = "3:17",
                 Team = TeamType.Defender,
                 Gadgets = new[] {"operatorpvp_wamai_gadgetdestroybymagnet"}
+            },
+            new Operator
+            {
+                Id = "oryx",
+                Name = "Oryx",
+                ReadableName = "Oryx",
+                FullIndex = "2:18",
+                Team = TeamType.Defender,
+                Gadgets = new[] {"operatorpvp_oryx_killsafterdash"}
+            },
+            new Operator
+            {
+                Id = "iana",
+                Name = "Iana",
+                ReadableName = "Iana",
+                FullIndex = "2:19",
+                Team = TeamType.Attacker,
+                Gadgets = new[] {"operatorpvp_iana_killsafterreplicator:2:19"}
             }
         };
     }

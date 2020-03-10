@@ -62,7 +62,9 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_goyo_volcandetonate", "Volcán Detonated by Your Team"},
                     {"operatorpvp_amaru_distancereeled", "Total Distance Reeled"},
                     {"operatorpvp_kali_gadgetdestroywithexplosivelance", "Gadgets Destroyed with the LV"},
-                    {"operatorpvp_wamai_gadgetdestroybymagnet", "Projectiles Captured"}
+                    {"operatorpvp_wamai_gadgetdestroybymagnet", "Projectiles Captured"},
+                    {"operatorpvp_iana_killsafterreplicator", "Kills after using Replicators"},
+                    {"operatorpvp_iana_killsafterreplicator", "Kills after Remah Dashes"}
                 }
             }
         };
