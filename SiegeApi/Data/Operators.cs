@@ -529,7 +529,25 @@ namespace SiegeApi.Data
                 ReadableName = "Iana",
                 FullIndex = "2:19",
                 Team = TeamType.Attacker,
-                Gadgets = new[] {"operatorpvp_iana_killsafterreplicator:2:19"}
+                Gadgets = new[] {"operatorpvp_iana_killsafterreplicator"}
+            },
+            new Operator
+            {
+                Id = "ace",
+                Name = "Ace",
+                ReadableName = "Ace",
+                FullIndex = "4:17",
+                Team = TeamType.Attacker,
+                Gadgets = new[] {"operatorpvp_ace_selmadetonate"}
+            },
+            new Operator
+            {
+                Id = "melusi",
+                Name = "Melusi",
+                ReadableName = "Melusi",
+                FullIndex = "2:1A",
+                Team = TeamType.Defender,
+                Gadgets = new[] {"operatorpvp_melusi_sloweddown"}
             }
         };
     }
