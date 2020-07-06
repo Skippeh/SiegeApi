@@ -64,7 +64,7 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_kali_gadgetdestroywithexplosivelance", "Gadgets Destroyed with the LV"},
                     {"operatorpvp_wamai_gadgetdestroybymagnet", "Projectiles Captured"},
                     {"operatorpvp_iana_killsafterreplicator", "Kills after using Replicators"},
-                    {"operatorpvp_iana_killsafterreplicator", "Kills after Remah Dashes"},
+                    {"operatorpvp_oryx_killsafterdash", "Kills after Remah Dashes"},
                     {"operatorpvp_melusi_sloweddown", "Attackers slowed by Banshee"},
                     {"operatorpvp_ace_selmadetonate", "S.E.L.M.A. Detonations"}
                 }
