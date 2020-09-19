@@ -548,6 +548,15 @@ namespace SiegeApi.Data
                 FullIndex = "2:1A",
                 Team = TeamType.Defender,
                 Gadgets = new[] {"operatorpvp_melusi_sloweddown"}
+            },
+            new Operator
+            {
+                Id = "zero",
+                Name = "Zero",
+                ReadableName = "Zero",
+                FullIndex = "1:1B",
+                Team = TeamType.Attacker,
+                Gadgets = new[] {"operatorpvp_zero_gadgetsdestroyed"}
             }
         };
     }
