@@ -8,6 +8,7 @@ namespace SiegeApi.Data
         XboxOne,
         EpicGames,
         UbiMobile,
-        Switch
+        Switch,
+        Amazon
     }
 }

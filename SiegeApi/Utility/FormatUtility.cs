@@ -17,6 +17,7 @@ namespace SiegeApi.Utility
                 case "epic": return Platform.EpicGames;
                 case "ubimobile": return Platform.UbiMobile;
                 case "switch": return Platform.Switch;
+                case "amazon": return Platform.Amazon;
             }
 
             return null;
@@ -33,6 +34,7 @@ namespace SiegeApi.Utility
                 case Platform.EpicGames: return "epic";
                 case Platform.UbiMobile: return "ubimobile";
                 case Platform.Switch: return "switch";
+                case Platform.Amazon: return "amazon";
             }
 
             return platform.ToString();
