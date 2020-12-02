@@ -27,7 +27,8 @@ namespace SiegeApi.Data
             "Shifting Tides",
             "Void Edge",
             "Steel Wave",
-            "Shadow Legacy"
+            "Shadow Legacy",
+            "Neon Dawn"
         }.Select((name, index) =>
         {
             var result = new Season

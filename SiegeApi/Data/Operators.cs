@@ -557,7 +557,16 @@ namespace SiegeApi.Data
                 FullIndex = "1:1B",
                 Team = TeamType.Attacker,
                 Gadgets = new[] {"operatorpvp_zero_gadgetsdestroyed"}
-            }
+            },
+            new Operator
+            {
+                Id = "aruni",
+                Name = "Aruni",
+                ReadableName = "Aruni",
+                FullIndex = "5:17",
+                Team = TeamType.Defender
+                // Unknown gadget id
+            },
         };
     }
 }
