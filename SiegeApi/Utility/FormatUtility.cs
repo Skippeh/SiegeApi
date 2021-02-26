@@ -18,6 +18,9 @@ namespace SiegeApi.Utility
                 case "ubimobile": return Platform.UbiMobile;
                 case "switch": return Platform.Switch;
                 case "amazon": return Platform.Amazon;
+                case "apple": return Platform.Apple;
+                case "googlestream": return Platform.GoogleStream;
+                case "amazonstream": return Platform.AmazonStream;
             }
 
             return null;
@@ -35,6 +38,9 @@ namespace SiegeApi.Utility
                 case Platform.UbiMobile: return "ubimobile";
                 case Platform.Switch: return "switch";
                 case Platform.Amazon: return "amazon";
+                case Platform.Apple: return "apple";
+                case Platform.GoogleStream: return "googlestream";
+                case Platform.AmazonStream: return "amazonstream";
             }
 
             return platform.ToString();

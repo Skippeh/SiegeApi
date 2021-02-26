@@ -9,6 +9,9 @@ namespace SiegeApi.Data
         EpicGames,
         UbiMobile,
         Switch,
-        Amazon
+        Amazon,
+        Apple,
+        GoogleStream,
+        AmazonStream
     }
 }
