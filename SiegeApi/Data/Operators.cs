@@ -567,6 +567,15 @@ namespace SiegeApi.Data
                 Team = TeamType.Defender
                 // Unknown gadget id
             },
+            new Operator()
+            {
+                Id = "flores",
+                Name = "Flores",
+                ReadableName = "Flores",
+                FullIndex = "3:18",
+                Team = TeamType.Attacker,
+                Gadgets = new[] {"operatorpvp_flores_gadgetdestroywithrceratero"}
+            }
         };
     }
 }
