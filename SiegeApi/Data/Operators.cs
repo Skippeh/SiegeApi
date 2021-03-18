@@ -564,8 +564,8 @@ namespace SiegeApi.Data
                 Name = "Aruni",
                 ReadableName = "Aruni",
                 FullIndex = "5:17",
-                Team = TeamType.Defender
-                // Unknown gadget id
+                Team = TeamType.Defender,
+                Gadgets = new[] {"operatorpvp_aruni_gatesdeployed"}
             },
             new Operator()
             {
