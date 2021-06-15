@@ -567,7 +567,7 @@ namespace SiegeApi.Data
                 Team = TeamType.Defender,
                 Gadgets = new[] {"operatorpvp_aruni_gatesdeployed"}
             },
-            new Operator()
+            new Operator
             {
                 Id = "flores",
                 Name = "Flores",
@@ -575,6 +575,15 @@ namespace SiegeApi.Data
                 FullIndex = "3:18",
                 Team = TeamType.Attacker,
                 Gadgets = new[] {"operatorpvp_flores_gadgetdestroywithrceratero"}
+            },
+            new Operator
+            {
+                Id = "thunderbird",
+                Name = "Thunderbird",
+                ReadableName = "Thunderbird",
+                FullIndex = "1:1C",
+                Team = TeamType.Defender,
+                Gadgets = new string[0] // don't know the value for this at the moment
             }
         };
     }
