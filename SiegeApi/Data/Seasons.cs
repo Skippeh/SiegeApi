@@ -30,7 +30,8 @@ namespace SiegeApi.Data
             "Shadow Legacy",
             "Neon Dawn",
             "Crimson Heist",
-            "North Star"
+            "North Star",
+            "Crystal Guard",
         }.Select((name, index) =>
         {
             var result = new Season
