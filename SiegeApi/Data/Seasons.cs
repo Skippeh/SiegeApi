@@ -233,8 +233,8 @@ namespace SiegeApi.Data
                         3600, // Platinum 1
                         4000  // Diamond
                     });
-                default: // Latest season should always be default
-                    return new RankRanges(season, new[]
+                case int _ when (season.Id >= 16 && season.Id <= 22): // Season 16 to 22
+                    return new RankRanges(season, new []
                     {
                         1100, // Copper 5
                         1200, // Copper 4
@@ -258,6 +258,35 @@ namespace SiegeApi.Data
                         3600, // Platinum 2
                         4000, // Platinum 1
                         4400, // Diamond
+                        5000 // Champions
+                    });
+                default: // Season 23 and later
+                    return new RankRanges(season, new []
+                    {
+                        1100, // Copper 5
+                        1200, // Copper 4
+                        1300, // Copper 3
+                        1400, // Copper 2
+                        1500, // Copper 1
+                        1600, // Bronze 5
+                        1700, // Bronze 4
+                        1800, // Bronze 3
+                        1900, // Bronze 2
+                        2000, // Bronze 1
+                        2100, // Silver 5
+                        2200, // Silver 4
+                        2300, // Silver 3
+                        2400, // Silver 2
+                        2500, // Silver 1
+                        2600, // Gold 3
+                        2800, // Gold 2
+                        3000, // Gold 1
+                        3200, // Platinum 3
+                        3600, // Platinum 2
+                        4000, // Platinum 1
+                        4100, // Diamond 3
+                        4400, // Diamond 2
+                        4700, // Diamond 1
                         5000 // Champions
                     });
             }
