@@ -102,7 +102,7 @@ namespace SiegeApi.Data
                         "Platinum 1",
                         "Diamond"
                     });
-                default: // Latest rank should always be default
+                case int _ when (seasonId >= 16 && seasonId <= 22): // Season 16 to 22
                     return CreateRanksFromNames(new[]
                     {
                         "Unranked",
@@ -128,6 +128,36 @@ namespace SiegeApi.Data
                         "Platinum 2",
                         "Platinum 1",
                         "Diamond",
+                        "Champions"
+                    });
+                default: // Season 23 and later
+                    return CreateRanksFromNames(new[]
+                    {
+                        "Unranked",
+                        "Copper 5",
+                        "Copper 4",
+                        "Copper 3",
+                        "Copper 2",
+                        "Copper 1",
+                        "Bronze 5",
+                        "Bronze 4",
+                        "Bronze 3",
+                        "Bronze 2",
+                        "Bronze 1",
+                        "Silver 5",
+                        "Silver 4",
+                        "Silver 3",
+                        "Silver 2",
+                        "Silver 1",
+                        "Gold 3",
+                        "Gold 2",
+                        "Gold 1",
+                        "Platinum 3",
+                        "Platinum 2",
+                        "Platinum 1",
+                        "Diamond 3",
+                        "Diamond 2",
+                        "Diamond 1",
                         "Champions"
                     });
             }
