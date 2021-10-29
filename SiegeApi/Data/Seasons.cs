@@ -312,8 +312,8 @@ namespace SiegeApi.Data
                         2800, // Gold 2
                         3000, // Gold 1
                         3200, // Platinum 3
-                        3600, // Platinum 2
-                        4000, // Platinum 1
+                        3500, // Platinum 2
+                        3800, // Platinum 1
                         4100, // Diamond 3
                         4400, // Diamond 2
                         4700, // Diamond 1
