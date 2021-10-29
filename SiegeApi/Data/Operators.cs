@@ -583,7 +583,16 @@ namespace SiegeApi.Data
                 ReadableName = "Thunderbird",
                 FullIndex = "1:1C",
                 Team = TeamType.Defender,
-                Gadgets = new string[0] // don't know the value for this at the moment
+                Gadgets = new[] {"operatorpvp_thunderbird_heals"}
+            },
+            new Operator
+            {
+                Id = "osa",
+                Name = "Osa",
+                ReadableName = "Osa",
+                FullIndex = "6:17",
+                Team = TeamType.Attacker,
+                Gadgets = new[] {"operatorpvp_osa_shieldsdeployed"}
             }
         };
     }
