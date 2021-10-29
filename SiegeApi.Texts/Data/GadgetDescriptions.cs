@@ -67,7 +67,9 @@ namespace SiegeApi.Texts.Data
                     {"operatorpvp_oryx_killsafterdash", "Kills after Remah Dashes"},
                     {"operatorpvp_melusi_sloweddown", "Attackers slowed by Banshee"},
                     {"operatorpvp_ace_selmadetonate", "S.E.L.M.A. Detonations"},
-                    {"operatorpvp_zero_gadgetsdestroyed", "Gadgets Destroyed by ARGUS Camera"}
+                    {"operatorpvp_zero_gadgetsdestroyed", "Gadgets Destroyed by ARGUS Camera"},
+                    {"operatorpvp_thunderbird_heals", "KÓNA Station heals"},
+                    {"operatorpvp_osa_shieldsdeployed", "TALON-8 Clear Shields deployed"}
                 }
             }
         };
