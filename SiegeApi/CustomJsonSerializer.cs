@@ -33,7 +33,7 @@ namespace SiegeApi
             }
         }
 
-        public T Deserialize<T>(IRestResponse response)
+        public T Deserialize<T>(IRestResponse response) 
         {
             var content = response.Content;
 
@@ -41,7 +41,7 @@ namespace SiegeApi
             {
                 using (var jsonTextReader = new JsonTextReader(stringReader))
                 {
-                    return serializer.Deserialize<T>(jsonTextReader);
+                    return serializer.Deserialize<T>(jsonTextReader)!;
                 }
             }
         }

@@ -15,7 +15,7 @@ namespace SiegeApi.Requests
              var request = new RestRequest(UbiUrls.GetLevelUrl(platform, profileIds));
              request.AddHeader("Authorization", apiClient.GetAuthorizationHeader());
              
-             var response = await apiClient.RestClient.ExecuteGetTaskAsync<ProgressionResponse>(request);
+             var response = await apiClient.RestClient.ExecuteGetAsync<ProgressionResponse>(request);
 
              if (response.StatusCode != HttpStatusCode.OK)
                  throw new UnexpectedHttpStatusCodeException(response.StatusCode);

@@ -13,7 +13,7 @@ namespace SiegeApi.Requests
         {
             var request = new RestRequest(UbiUrls.LoginUrl);
             request.AddJsonBody(new {rememberMe = true});
-            var response = await client.ExecutePostTaskAsync<AuthResponse>(request);
+            var response = await client.ExecutePostAsync<AuthResponse>(request);
 
             if (response.StatusCode != HttpStatusCode.OK)
                 throw new LoginFailedException($"HttpStatusCode = {response.StatusCode}", null);

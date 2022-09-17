@@ -13,7 +13,7 @@ namespace SiegeApi.Requests
             var request = new RestRequest(UbiUrls.GetProfileUrl(platform, username));
             request.AddHeader("Authorization", client.GetAuthorizationHeader());
 
-            var response = await client.RestClient.ExecuteGetTaskAsync<ProfileResponse>(request);
+            var response = await client.RestClient.ExecuteGetAsync<ProfileResponse>(request);
 
             return response.Data;
         }
@@ -23,7 +23,7 @@ namespace SiegeApi.Requests
             var request = new RestRequest(UbiUrls.GetReverseUrl(userId));
             request.AddHeader("Authorization", client.GetAuthorizationHeader());
 
-            var response = await client.RestClient.ExecuteGetTaskAsync<ProfileResponse>(request);
+            var response = await client.RestClient.ExecuteGetAsync<ProfileResponse>(request);
 
             return response.Data;
         }
