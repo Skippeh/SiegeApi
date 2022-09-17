@@ -16,11 +16,11 @@ namespace SiegeApi.Requests.ResponseModels
             public int MaxRank { get; set; }
             public float Mmr { get; set; }
             public int Rank { get; set; }
-            public string Region { get; set; }
+            public string Region { get; set; } = null!;
             public int Season { get; set; }
             public int Wins { get; set; }
         }
         
-        public Dictionary<string, ResponseRankStats> Players { get; set; }
+        public Dictionary<string, ResponseRankStats> Players { get; set; } = null!;
     }
 }

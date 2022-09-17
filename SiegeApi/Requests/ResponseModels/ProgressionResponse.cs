@@ -20,6 +20,6 @@ namespace SiegeApi.Requests.ResponseModels
         }
         
         [JsonProperty("player_profiles")]
-        public List<ProfileProgressionResponse> UserProfiles { get; set; }
+        public List<ProfileProgressionResponse> UserProfiles { get; set; } = null!;
     }
 }

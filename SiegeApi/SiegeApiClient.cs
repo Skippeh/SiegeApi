@@ -17,13 +17,13 @@ namespace SiegeApi
 {
     public class SiegeApiClient : IDisposable
     {
-        public AuthResponse CurrentLogin { get; private set; }
+        public AuthResponse? CurrentLogin { get; private set; }
         public bool LoggedIn => CurrentLogin != null;
 
         internal RestClient RestClient { get; private set; }
         
-        private CancellationTokenSource renewCancellation;
-        private Task renewTask;
+        private CancellationTokenSource? renewCancellation;
+        private Task? renewTask;
         
         public SiegeApiClient()
         {
@@ -77,7 +77,7 @@ namespace SiegeApi
         
         #region Profile
 
-        public async Task<UserProfile> FindProfileAsync(string username, Platform platform)
+        public async Task<UserProfile?> FindProfileAsync(string username, Platform platform)
         {
             ProfileResponse response = await ProfileRequests.FindProfileAsync(this, username, platform);
             return response.Profiles.FirstOrDefault();
@@ -93,7 +93,7 @@ namespace SiegeApi
         
         #region Stats
 
-        public async Task<UserStats> GetStatsAsync(UserProfile profile)
+        public async Task<UserStats?> GetStatsAsync(UserProfile profile)
         {
             if (profile == null)
                 throw new ArgumentNullException(nameof(profile));
@@ -326,7 +326,7 @@ namespace SiegeApi
 
         #endregion
 
-        private TValue GetValueOrDefault<TKey, TValue>(Dictionary<TKey, TValue> source, TKey key, Func<TValue> defaultValueInstantiator)
+        private TValue GetValueOrDefault<TKey, TValue>(Dictionary<TKey, TValue> source, TKey key, Func<TValue> defaultValueInstantiator) where TKey : notnull
         {
             if (source.TryGetValue(key, out var result))
                 return result;
@@ -349,7 +349,7 @@ namespace SiegeApi
         
         private string GetAuthorizationToken()
         {
-            if (!LoggedIn)
+            if (CurrentLogin == null)
                 throw new NotLoggedInException("Can't retrieve auth token because the client is not logged in.");
 
             return CurrentLogin.Ticket;

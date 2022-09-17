@@ -12,19 +12,13 @@ namespace SiegeApi
 
         public CustomJsonSerializer(JsonSerializer serializer)
         {
-            this.serializer = serializer;           
+            this.serializer = serializer;
         }
 
         public string ContentType {
             get => "application/json";
             set {}
         }
-
-        public string DateFormat { get; set; }
-
-        public string Namespace { get; set; }
-
-        public string RootElement { get; set; }
 
         public string Serialize(object obj)
         {

@@ -7,7 +7,7 @@ namespace SiegeApi.Models
 {
     public class UserProfile
     {
-        public string NameOnPlatform { get; set; }
+        public string NameOnPlatform { get; set; } = null!;
 
         public Platform Platform
         {
@@ -20,6 +20,6 @@ namespace SiegeApi.Models
         public Guid ProfileId { get; set; }
 
         [JsonProperty("platformType")]
-        private string platform { get; set; }
+        private string platform { get; set; } = null!;
     }
 }

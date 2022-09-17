@@ -16,43 +16,39 @@ namespace SiegeApi.Data
         {
             {
                 Platform.Uplay,
-                new PlatformUrls
-                {
-                    ProfileUrl = "https://public-ubiservices.ubi.com/v2/profiles?platformType=uplay&nameOnPlatform=",
-                    StatsUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/playerstats2/statistics?",
-                    LevelUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
-                    RankUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6karma/players?board_id=pvp_ranked&"
-                }
+                new PlatformUrls(
+                    profileUrl: "https://public-ubiservices.ubi.com/v2/profiles?platformType=uplay&nameOnPlatform=",
+                    statsUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/playerstats2/statistics?",
+                    levelUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
+                    rankUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6karma/players?board_id=pvp_ranked&"
+                )
             },
             {
                 Platform.Steam,
-                new PlatformUrls
-                {
-                    ProfileUrl = "https://public-ubiservices.ubi.com/v2/profiles?platformType=uplay&nameOnPlatform=",
-                    StatsUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/playerstats2/statistics?",
-                    LevelUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
-                    RankUrl = "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6karma/players?board_id=pvp_ranked&"
-                }
+                new PlatformUrls(
+                    profileUrl: "https://public-ubiservices.ubi.com/v2/profiles?platformType=uplay&nameOnPlatform=",
+                    statsUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/playerstats2/statistics?",
+                    levelUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
+                    rankUrl: "https://public-ubiservices.ubi.com/v1/spaces/5172a557-50b5-4665-b7db-e3f2e8c5041d/sandboxes/OSBOR_PC_LNCH_A/r6karma/players?board_id=pvp_ranked&"
+                )
             },
             {
                 Platform.PS4,
-                new PlatformUrls
-                {
-                    ProfileUrl = "https://public-ubiservices.ubi.com/v2/profiles?platformType=psn&nameOnPlatform=",
-                    StatsUrl = "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/playerstats2/statistics?",
-                    LevelUrl = "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
-                    RankUrl = "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/r6karma/players?board_id=pvp_ranked&"
-                }
+                new PlatformUrls(
+                    profileUrl: "https://public-ubiservices.ubi.com/v2/profiles?platformType=psn&nameOnPlatform=",
+                    statsUrl: "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/playerstats2/statistics?",
+                    levelUrl: "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
+                    rankUrl: "https://public-ubiservices.ubi.com/v1/spaces/05bfb3f7-6c21-4c42-be1f-97a33fb5cf66/sandboxes/OSBOR_PS4_LNCH_A/r6karma/players?board_id=pvp_ranked&"
+                )
             },
             {
                 Platform.XboxOne,
-                new PlatformUrls
-                {
-                    ProfileUrl = "https://public-ubiservices.ubi.com/v2/profiles?platformType=xbl&nameOnPlatform=",
-                    StatsUrl = "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/playerstats2/statistics?",
-                    LevelUrl = "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
-                    RankUrl = "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/r6karma/players?board_id=pvp_ranked&"
-                }
+                new PlatformUrls(
+                    profileUrl: "https://public-ubiservices.ubi.com/v2/profiles?platformType=xbl&nameOnPlatform=",
+                    statsUrl: "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/playerstats2/statistics?",
+                    levelUrl: "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/r6playerprofile/playerprofile/progressions?profile_ids=",
+                    rankUrl: "https://public-ubiservices.ubi.com/v1/spaces/98a601e5-ca91-4440-b1c5-753f601a2c90/sandboxes/OSBOR_XBOXONE_LNCH_A/r6karma/players?board_id=pvp_ranked&"
+                )
             }
         });
 
@@ -82,9 +78,17 @@ namespace SiegeApi.Data
 
     internal class PlatformUrls
     {
-        public string ProfileUrl;
-        public string StatsUrl;
-        public string LevelUrl;
-        public string RankUrl;
+        public readonly string ProfileUrl;
+        public readonly string StatsUrl;
+        public readonly string LevelUrl;
+        public readonly string RankUrl;
+
+        public PlatformUrls(string profileUrl, string statsUrl, string levelUrl, string rankUrl)
+        {
+            ProfileUrl = profileUrl;
+            StatsUrl = statsUrl;
+            LevelUrl = levelUrl;
+            RankUrl = rankUrl;
+        }
     }
 }

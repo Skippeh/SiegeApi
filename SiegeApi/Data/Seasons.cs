@@ -34,13 +34,12 @@ namespace SiegeApi.Data
             "Crystal Guard",
         }.Select((name, index) =>
         {
-            var result = new Season
-            {
-                Id = index + 1,
-                Index = index,
-                Name = name,
-                Ranks = CreateRanks(index + 1)
-            };
+            var result = new Season(
+                id: index + 1,
+                index: index,
+                name: name,
+                ranks: CreateRanks(index + 1)
+            );
 
             result.RankRanges = CreateRanges(result);
             return result;
@@ -324,11 +323,7 @@ namespace SiegeApi.Data
 
         private static Rank[] CreateRanksFromNames(string[] rankNames)
         {
-            return rankNames.Select((name, index) => new Rank
-            {
-                Id = index,
-                Name = name
-            }).ToArray();
+            return rankNames.Select((name, index) => new Rank(index, name)).ToArray();
         }
     }
 }

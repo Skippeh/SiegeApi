@@ -8,6 +8,14 @@ namespace SiegeApi.Models
         public int Index { get; set; }
         public string Name { get; set; }
         public Rank[] Ranks { get; set; }
-        public RankRanges RankRanges { get; set; }
+        public RankRanges RankRanges { get; set; } = null!;
+
+        internal Season(int id, int index, string name, Rank[] ranks)
+        {
+            Id = id;
+            Index = index;
+            Name = name;
+            Ranks = ranks;
+        }
     }
 }
