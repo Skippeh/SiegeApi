@@ -32,6 +32,10 @@ namespace SiegeApi.Data
             "Crimson Heist",
             "North Star",
             "Crystal Guard",
+            "High Calibre",
+            "Demon Veil",
+            "Vector Glare",
+            "Brutal Swarm",
         }.Select((name, index) =>
         {
             var result = new Season(

@@ -1,3 +1,4 @@
+using System;
 using SiegeApi.Models;
 // ReSharper disable StringLiteralTypo
 
@@ -593,6 +594,42 @@ namespace SiegeApi.Data
                 FullIndex = "6:17",
                 Team = TeamType.Attacker,
                 Gadgets = new[] {"operatorpvp_osa_shieldsdeployed"}
+            },
+            new Operator
+            {
+                Id = "thorn",
+                Name = "Thorn",
+                ReadableName = "Thorn",
+                FullIndex = null,
+                Team = TeamType.Defender,
+                Gadgets = Array.Empty<string>()
+            },
+            new Operator
+            {
+                Id = "azami",
+                Name = "Azami",
+                ReadableName = "Azami",
+                FullIndex = null,
+                Team = TeamType.Defender,
+                Gadgets = Array.Empty<string>()
+            },
+            new Operator
+            {
+                Id = "sens",
+                Name = "Sens",
+                ReadableName = "Sens",
+                FullIndex = null,
+                Team = TeamType.Attacker,
+                Gadgets = Array.Empty<string>()
+            },
+            new Operator
+            {
+                Id = "grim",
+                Name = "Grim",
+                ReadableName = "Grim",
+                FullIndex = null,
+                Team = TeamType.Attacker,
+                Gadgets = Array.Empty<string>()
             }
         };
     }
