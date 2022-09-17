@@ -8,6 +8,7 @@ using SiegeApi.Models;
 namespace SiegeApi.Tests.Tests
 {
     [Order(1), SingleThreaded, NonParallelizable]
+    [TestFixture]
     public class ProfileTests
     {
         private UserProfile profile;

@@ -6,6 +6,7 @@ using SiegeApi.Tests.Configuration;
 namespace SiegeApi.Tests.Tests
 {
     [Order(0), SingleThreaded, NonParallelizable]
+    [TestFixture]
     public class AuthTests
     {
         private SiegeApiClient apiClient;

@@ -11,6 +11,7 @@ using SiegeApi.Models;
 namespace SiegeApi.Tests.Tests
 {
     [Order(2), SingleThreaded, NonParallelizable]
+    [TestFixture]
     public class RankTests
     {
         [SetUp]
