@@ -112,7 +112,7 @@ namespace SiegeApi
                 var allStats = kv.Value;
                 
                 var allOperatorStats = new List<OperatorStats>();
-                foreach (var op in Operators.Data)
+                foreach (var op in Operators.Data.Where(d => d.FullIndex != null))
                 {
                     var gadgetStats = new Dictionary<string, int>();
 
